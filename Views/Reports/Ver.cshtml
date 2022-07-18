@@ -1,0 +1,38 @@
+﻿@using WebMetrolog.Entity
+@model Dictionary<string, List<string>>
+@{
+
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    @{
+        foreach(var verification in Model)
+            {
+            <table>
+                    <tr>
+                        <td>@verification.Key</td>
+                        <td>@verification.Value</td>
+
+                    </tr>
+
+            </table>
+
+
+            }
+
+
+
+
+
+    }
+</body>
+
+</html>
